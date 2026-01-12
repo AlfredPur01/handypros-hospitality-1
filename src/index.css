@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Pacifico&display=swap');
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 7%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+
+    --primary: 185 76% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 25 100% 94%;
+    --secondary-foreground: 0 0% 7%;
+
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 185 76% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 185 76% 45%;
+
+    --radius: 0.5rem;
+
+    /* Custom colors for HandyPros */
+    --hero-dark: 0 0% 10%;
+    --hero-peach: 25 100% 94%;
+    --turquoise: 185 76% 45%;
+    --turquoise-light: 185 76% 50%;
+    --dark-text: 0 0% 7%;
+    --gray-text: 0 0% 45%;
+    --light-gray: 0 0% 96%;
+    --border-orange: 30 100% 50%;
+  }
+
+  .dark {
+    --background: 0 0% 7%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 185 76% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 185 76% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 185 76% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-foreground text-background px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:opacity-90;
+  }
+
+  .btn-outline {
+    @apply border-2 border-current px-6 py-2 rounded-full font-medium transition-all duration-300 hover:bg-foreground hover:text-background;
+  }
+
+  .search-input {
+    @apply bg-background rounded-full px-6 py-4 w-full focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+
+  .section-label {
+    @apply font-pacifico text-primary text-lg;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold text-foreground;
+  }
+
+  .card-destination {
+    @apply bg-card rounded-2xl overflow-hidden shadow-lg transition-transform duration-300 hover:-translate-y-2;
+  }
+
+  .nav-link {
+    @apply text-foreground font-medium hover:text-primary transition-colors duration-200;
+  }
+
+  .tab-item {
+    @apply px-6 py-3 text-sm font-medium transition-all duration-200 cursor-pointer;
+  }
+
+  .tab-active {
+    @apply text-foreground border-b-2 border-primary;
+  }
+
+  .tab-inactive {
+    @apply text-muted-foreground hover:text-foreground;
+  }
+
+  .form-input {
+    @apply w-full border border-border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200;
+  }
+
+  .hero-breadcrumb {
+    @apply inline-flex items-center gap-4 bg-background rounded-full px-6 py-3 border border-border-orange;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-turquoise-light bg-clip-text text-transparent;
+  }
+
+  .bg-hero-dark {
+    @apply bg-hero-dark;
+  }
+
+  .bg-hero-peach {
+    @apply bg-secondary;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* Blog Article Styles */
+.prose {
+  color: hsl(var(--foreground));
+}
+
+.prose h2 {
+  @apply text-2xl font-bold mt-8 mb-4 text-foreground;
+}
+
+.prose p {
+  @apply mb-4 leading-relaxed text-muted-foreground;
+}
+
+.prose p.lead {
+  @apply text-lg text-foreground font-medium;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-primary pl-6 py-2 my-8 italic text-muted-foreground bg-muted/30 rounded-r-lg;
+}
+
+.prose ul {
+  @apply list-disc pl-6 mb-4 space-y-2;
+}
+
+.prose li {
+  @apply text-muted-foreground;
+}
