@@ -16,6 +16,11 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
         pacifico: ["Pacifico", "cursive"],
+        justAnotherHand: ["Just Another Hand", "cursive"],
+        barlow: ["Barlow Condensed", "sans-serif"],
+        Outfit: ["Outfitt", "sans-serif"],
+        Urbanist: ["Urbanist", "sans-serif"],
+        IBMplexSans: ["IBM Plex Sans", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -91,5 +96,6 @@ export default {
       },
     },
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;

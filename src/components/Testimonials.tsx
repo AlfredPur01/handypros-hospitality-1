@@ -120,11 +120,10 @@ const Testimonials = () => {
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className={`w-full h-full rounded-full object-cover border-4 ${
-                      testimonial.position === 0 
-                        ? "border-primary shadow-xl" 
+                    className={`w-full h-full rounded-full object-cover border-4 ${testimonial.position === 0
+                        ? "border-primary shadow-xl"
                         : "border-background shadow-md"
-                    }`}
+                      }`}
                   />
                 </div>
               </motion.div>
