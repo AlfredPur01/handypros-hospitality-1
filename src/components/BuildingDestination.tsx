@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import { FaStar } from "react-icons/fa"
 import testimonials from "@/assets/testimonials.png";
 
 const features = [
@@ -23,16 +24,16 @@ const BuildingDestination = () => {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            <div>
-              <span className="text-primary font-medium">HandyPros</span>
-              <h2 className="section-title mt-2">Building Destination to Get Things Done</h2>
-              <p className="text-muted-foreground mt-4">
+            <div className="max-w-xl">
+              <span className="text-3xl  font-justAnotherHand">HandyPros</span>
+              <h2 className="font-extrabold text-[40px] mb-5">Building Destination to Get Things Done</h2>
+              <p className="text-sm">
                 No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full equality.
               </p>
             </div>
 
             {/* Features Grid */}
-            <div className="grid md:grid-cols-2 gap-4">
+            <div className="grid md:grid-cols-2 gap-4 bg-cover bg-center px-6 md:px-16 py-10 md:py-12 w-full rounded-lg" style={{ backgroundImage: `url("/testimonials_bg.png")` }}>
               {features.map((feature, index) => (
                 <motion.div
                   key={index}
@@ -42,17 +43,16 @@ const BuildingDestination = () => {
                   transition={{ delay: index * 0.1 }}
                   className="flex items-center gap-3"
                 >
-                  <div className="w-5 h-5 rounded-full bg-primary flex items-center justify-center flex-shrink-0">
-                    <Check className="w-3 h-3 text-primary-foreground" />
+                  <div>
+                    <FaStar color="gold" />
                   </div>
                   <span className="text-sm">{feature}</span>
                 </motion.div>
               ))}
+              <button className="px-6 py-4 mt-8 bg-[#2BBBE6] text-black rounded-md font-bold hover:cursor-pointer w-full sm:w-auto">
+                EXPLORE TRIP
+              </button>
             </div>
-
-            <button className="btn-primary">
-              EXPLORE TRIP
-            </button>
           </motion.div>
 
           {/* Right Image */}

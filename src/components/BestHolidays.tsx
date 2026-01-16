@@ -1,69 +1,123 @@
 import { motion } from "framer-motion";
-import holiday1 from "@/assets/holiday1.png";
-import holiday2 from "@/assets/holiday2.png";
-import holiday5 from "@/assets/holiday5.png";
+import { FaUmbrellaBeach, FaMountain, FaShip, FaCampground } from "react-icons/fa"
+import destination1 from "@/assets/Holidays/holiday1.png"
+import destination2 from "@/assets/Holidays/Image5.png"
+import destination3 from "@/assets/Holidays/holiday1.png"
+import destination4 from "@/assets/Holidays/holiday2.png"
+import destination5 from "@/assets/Holidays/Image5.png"
 
 const holidays = [
   {
     title: "VIP Beaches",
-    description: "No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full detention.",
-    image: holiday1,
+    image: destination1,
   },
   {
     title: "Mountain Walks",
-    description: "No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full detention.",
-    image: holiday2,
+    image: destination2,
   },
   {
     title: "Luxury Yachts",
-    description: "No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full detention.",
-    image: holiday1,
+    image: destination3,
   },
   {
     title: "Recreational Camps",
-    description: "No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full detention.",
-    image: holiday5,
+    image: destination4,
+  },
+  {
+    title: "Recreational Camps",
+    image: destination5,
   },
 ];
 
+const features = [
+  {
+    title: "VIP Beaches",
+    icon: FaUmbrellaBeach,
+    description:
+      "No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full detention.",
+  },
+  {
+    title: "Mountain Walks",
+    icon: FaMountain,
+    description:
+      "No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full detention.",
+  },
+  {
+    title: "Luxury Yachts",
+    icon: FaShip,
+    description:
+      "No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full detention.",
+  },
+  {
+    title: "Recreational Camps",
+    icon: FaCampground,
+    description:
+      "No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full detention.",
+  },
+];
+
+
+
 const BestHolidays = () => {
   return (
-    <section className="py-20 bg-background">
+    <section className="mt-10 pl-5 pr-14">
       <div className="container mx-auto px-8">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center md:mb-28 mb-16"
         >
-          <span className="font-pacifico text-primary text-lg">Vacation Agen c</span>
-          <h2 className="section-title mt-2">The Best Holidays</h2>
+          <span className="font-justAnotherHand text-3xl">Vacation Agen c</span>
+          <h2 className="font-extrabold text-3xl md:text-4xl font-barlow">The Best Holidays</h2>
         </motion.div>
 
-        {/* Holiday Cards */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {holidays.map((holiday, index) => (
-            <motion.div
-              key={holiday.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="group cursor-pointer"
-            >
-              <div className="relative mb-4 rounded-2xl overflow-hidden">
-                <img
-                  src={holiday.image}
-                  alt={holiday.title}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+
+        {/* Background */}
+        <div className="w-full px-6 md:px-10 bg-center bg-cover rounded-b-[32px]" style={{ backgroundImage: `url("/popularDestinations.jpg")` }}>
+
+
+          {/* Image row */}
+          <div className="flex relative md:bottom-20 flex-wrap md:flex-nowrap justify-center gap-4 md:gap-5 items-center md:px-20">
+            {holidays.map((holiday, index) => (
+              <motion.div
+                key={holiday.title}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="group cursor-pointer"
+              >
+                <div className="relative mb-4 rounded-2xl overflow-hidden">
+                  <img
+                    src={holiday.image}
+                    alt={holiday.title}
+                    className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Description */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mt-10 px-4 md:px-10 pb-20">
+            {features.map(({ title, icon: Icon, description }) => (
+              <div key={title} className="flex flex-col text-center md:text-left">
+
+                {/* Icon */}
+                <div className="mb-4 flex justify-center md:justify-start">
+                  <Icon className="text-4xl text-[#040404]" />
+                </div>
+
+                <h2 className="font-bold text-xl mb-2 font-Barlow">{title}</h2>
+                <p className="text-base font-Barlow">{description}</p>
               </div>
-              <h3 className="font-bold text-lg mb-2">{holiday.title}</h3>
-              <p className="text-sm text-muted-foreground">{holiday.description}</p>
-            </motion.div>
-          ))}
+            ))}
+          </div>
+
+
         </div>
       </div>
     </section>

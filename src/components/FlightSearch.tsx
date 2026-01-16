@@ -12,8 +12,8 @@ import star from "@/assets/star.png";
 
 const FlightSearch = () => {
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
-      <div className="container mx-auto px-8">
+    <section className="p-20 bg-background relative overflow-hidden">
+      <div className="container rounded-2xl mx-auto px-8 bg-[#F5E0D0]">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Decorative Section */}
           <motion.div

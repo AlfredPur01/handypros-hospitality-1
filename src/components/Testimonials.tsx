@@ -77,7 +77,7 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="font-pacifico text-primary text-lg">What Say People</span>
+          <span className="font-justAnotherHand text-primary text-2xl">What Say People</span>
           <h2 className="section-title mt-2">The Best Holidays</h2>
         </motion.div>
 
@@ -121,8 +121,8 @@ const Testimonials = () => {
                     src={testimonial.image}
                     alt={testimonial.name}
                     className={`w-full h-full rounded-full object-cover border-4 ${testimonial.position === 0
-                        ? "border-primary shadow-xl"
-                        : "border-background shadow-md"
+                      ? "border-primary shadow-xl"
+                      : "border-background shadow-md"
                       }`}
                   />
                 </div>

@@ -4,6 +4,7 @@ import PopularDestinations from "@/components/PopularDestinations";
 import TourPackages from "@/components/TourPackages";
 import ExploreOptions from "@/components/ExploreOptions";
 import BlogPreview from "@/components/BlogPreview";
+import BestHolidays from "@/components/BestHolidays";
 import Testimonials from "@/components/Testimonials";
 import FlightSearch from "@/components/FlightSearch";
 import BuildingDestination from "@/components/BuildingDestination";
@@ -18,6 +19,7 @@ const Index = () => {
       <TourPackages />
       <ExploreOptions />
       <BlogPreview />
+      <BestHolidays />
       <Testimonials />
       <FlightSearch />
       <BuildingDestination />
