@@ -119,7 +119,7 @@ const Blog = () => {
 
   const filteredPosts = blogPosts.filter((post) => {
     const matchesCategory = activeCategory === "all" || post.categoryId === activeCategory;
-    const matchesSearch = 
+    const matchesSearch =
       post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
       post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
     return matchesCategory && matchesSearch;
@@ -131,7 +131,7 @@ const Blog = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="pt-24 pb-20">
         <div className="container mx-auto px-8">
           {/* Page Header */}
@@ -172,11 +172,10 @@ const Blog = () => {
                 <button
                   key={category.id}
                   onClick={() => setActiveCategory(category.id)}
-                  className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${
-                    activeCategory === category.id
+                  className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === category.id
                       ? "bg-foreground text-background"
                       : "bg-muted text-foreground hover:bg-muted/80"
-                  }`}
+                    }`}
                 >
                   {category.name}
                 </button>

@@ -46,7 +46,7 @@ const BlogPreview = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <span className="font-pacifico text-primary text-lg">Our Stories</span>
+          <span className="font-justAnotherHand text-primary text-lg">Our Stories</span>
           <h2 className="section-title mt-2">Travel Blog & Insights</h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
             Explore stories, tips, and inspiration from around the world. Discover destinations, travel guides, and experiences that help you plan your next unforgettable journey.
