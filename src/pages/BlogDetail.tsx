@@ -164,7 +164,7 @@ const BlogDetail = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="pt-24 pb-20">
         {/* Hero Image */}
         <motion.div
@@ -188,8 +188,8 @@ const BlogDetail = () => {
               animate={{ opacity: 1, x: 0 }}
               className="mb-8"
             >
-              <Link 
-                to="/blog" 
+              <Link
+                to="/blog"
                 className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />

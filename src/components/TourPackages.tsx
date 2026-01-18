@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import moroccoImg from "@/assets/carousel/morocco.jpg";
 import londonImg from "@/assets/carousel/london.png";
 import chaoImg from "@/assets/carousel/chao.png";
@@ -90,9 +91,11 @@ const TourPackages = () => {
                     <p className="text-xs text-muted-foreground mb-4">
                       Accomodations, Flights, Transfers, Tours and Excursions, Activities
                     </p>
-                    <button className="btn-primary w-full text-sm py-2">
-                      Book Now
-                    </button>
+                    <Link to="/booking-details">
+                      <button className="btn-primary w-full text-sm py-2">
+                        Book Now
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </motion.div>
