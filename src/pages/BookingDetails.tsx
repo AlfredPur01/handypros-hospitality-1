@@ -1,3 +1,4 @@
+import { useParams } from "react-router-dom";
 import Navbar from "@/components/Header";
 import PageHero from "@/components/PageHero";
 import ImageGallery from "@/components/booking/ImageGallery";
@@ -8,33 +9,51 @@ import Sidebar from "@/components/booking/Sidebar";
 import ContactForm from "@/components/booking/ContactForm";
 import Footer from "@/components/Footer";
 
+import { packages } from "@/data/bookingdata";
+import path from "path";
+
 const BookingDetails = () => {
+  const { slug } = useParams();
+
+  const selectedPackage = packages.find(
+    (item) => item.slug === slug
+  );
+
+  if (!selectedPackage) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <p className="text-muted-foreground text-lg">
+          Package not found
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
+
       <PageHero
-        title="About"
+        title={selectedPackage.name}
         breadcrumb={[
           { name: "HOME", path: "/" },
-          { name: "ABOUT", path: "/about" },
+          { name: "PACKAGES", path: "/packages" },
         ]}
       />
-      <ImageGallery />
 
-      {/* Main Content */}
+      <ImageGallery images={selectedPackage.images} />
+
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-          {/* Left Column - Forms & Packages */}
           <div className="lg:col-span-2 space-y-12">
-            <BookingForm />
-            <PaymentDetails />
+            <BookingForm packageData={selectedPackage} />
+            <PaymentDetails packageData={selectedPackage} />
             <PackagesSection />
             <ContactForm />
           </div>
 
-          {/* Right Column - Sidebar */}
           <div className="lg:col-span-1">
-            <Sidebar />
+            <Sidebar packageData={selectedPackage} />
           </div>
         </div>
       </div>

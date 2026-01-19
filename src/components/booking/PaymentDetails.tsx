@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-const PaymentDetails = () => {
+const PaymentDetails = ({ packageData }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

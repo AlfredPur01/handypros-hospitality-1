@@ -1,21 +1,9 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import moroccoImg from "@/assets/carousel/morocco.jpg";
-import londonImg from "@/assets/carousel/london.png";
-import chaoImg from "@/assets/carousel/chao.png";
-import japanImg from "@/assets/carousel/japan.png";
-import parisImg from "@/assets/carousel/paris.png";
-import offRoadImg from "@/assets/carousel/off-road.jpg";
+import { packages } from "@/data/bookingdata";
 
-const packages = [
-  { name: "Morocco", image: moroccoImg },
-  { name: "London", image: londonImg },
-  { name: "Chao", image: chaoImg },
-  { name: "Japan", image: japanImg },
-  { name: "Paris", image: parisImg },
-  { name: "Off Road", image: offRoadImg },
-];
+
 
 const tabs = [
   "Multi Holidays",
@@ -91,7 +79,7 @@ const TourPackages = () => {
                     <p className="text-xs text-muted-foreground mb-4">
                       Accomodations, Flights, Transfers, Tours and Excursions, Activities
                     </p>
-                    <Link to="/booking-details">
+                    <Link to={`/booking/${pkg.slug}`}>
                       <button className="btn-primary w-full text-sm py-2">
                         Book Now
                       </button>

@@ -1,16 +1,11 @@
 import { motion } from "framer-motion";
-import { Image, ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
-const galleryImages = [
-  { id: 1, color: "from-rose-400 to-orange-300", label: "Morocco - AFCON, Rabat" },
-  { id: 2, color: "from-emerald-400 to-teal-500", label: "Garden View" },
-  { id: 3, color: "from-amber-400 to-orange-500", label: "Desert Tour" },
-  { id: 4, color: "from-blue-400 to-indigo-500", label: "City Night" },
-];
-
-const ImageGallery = () => {
+const ImageGallery = ({ images = [] }) => {
   const [activeIndex, setActiveIndex] = useState(0);
+
+  if (!images.length) return null;
 
   return (
     <motion.section
@@ -28,20 +23,26 @@ const ImageGallery = () => {
               key={activeIndex}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              className={`aspect-[4/3] rounded-xl bg-gradient-to-br ${galleryImages[activeIndex].color} flex items-center justify-center relative overflow-hidden`}
+              className="aspect-[4/3] rounded-xl overflow-hidden relative"
             >
-              <Image className="w-16 h-16 text-white/50" />
-              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-4">
-                <span className="text-white font-medium">{galleryImages[activeIndex].label}</span>
-              </div>
+              <img
+                src={images[activeIndex]}
+                alt="Package image"
+                className="w-full h-full object-cover"
+              />
+
+              {/* Navigation */}
               <button
-                onClick={() => setActiveIndex(Math.max(0, activeIndex - 1))}
+                onClick={() => setActiveIndex((i) => Math.max(0, i - 1))}
                 className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
               >
                 <ChevronLeft className="w-4 h-4" />
               </button>
+
               <button
-                onClick={() => setActiveIndex(Math.min(galleryImages.length - 1, activeIndex + 1))}
+                onClick={() =>
+                  setActiveIndex((i) => Math.min(images.length - 1, i + 1))
+                }
                 className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/90 hover:bg-white rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity shadow-lg"
               >
                 <ChevronRight className="w-4 h-4" />
@@ -49,18 +50,24 @@ const ImageGallery = () => {
             </motion.div>
           </div>
 
-          {/* Thumbnail Grid */}
+          {/* Thumbnails */}
           <div className="md:col-span-6 grid grid-cols-2 gap-3">
-            {galleryImages.map((img, idx) => (
+            {images.map((img, idx) => (
               <motion.button
-                key={img.id}
+                key={idx}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 onClick={() => setActiveIndex(idx)}
-                className={`aspect-[4/3] rounded-xl bg-gradient-to-br ${img.color} flex items-center justify-center relative overflow-hidden ${idx === activeIndex ? "ring-2 ring-primary ring-offset-2" : ""
+                className={`aspect-[4/3] rounded-xl overflow-hidden relative ${idx === activeIndex
+                    ? "ring-2 ring-primary ring-offset-2"
+                    : ""
                   }`}
               >
-                <Image className="w-8 h-8 text-white/50" />
+                <img
+                  src={img}
+                  alt="Thumbnail"
+                  className="w-full h-full object-cover"
+                />
               </motion.button>
             ))}
           </div>
@@ -71,3 +78,4 @@ const ImageGallery = () => {
 };
 
 export default ImageGallery;
+

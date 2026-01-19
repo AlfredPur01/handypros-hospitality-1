@@ -25,7 +25,7 @@ const includes = [
   "Travel insurance",
 ];
 
-const Sidebar = () => {
+const Sidebar = ({ packageData }) => {
   return (
     <div className="space-y-6">
       {/* Quick Book Card */}

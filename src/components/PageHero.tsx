@@ -40,11 +40,10 @@ const PageHero = ({ title, breadcrumb }: PageHeroProps) => {
                   {index > 0 && <span className="text-muted-foreground mx-2"></span>}
                   <Link
                     to={item.path}
-                    className={`font-medium ${
-                      index === breadcrumb.length - 1
+                    className={`font-medium ${index === breadcrumb.length - 1
                         ? "text-primary"
                         : "text-foreground hover:text-primary"
-                    }`}
+                      }`}
                   >
                     {item.name}
                   </Link>

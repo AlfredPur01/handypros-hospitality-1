@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
-const BookingForm = () => {
+const BookingForm = ({ packageData }) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
