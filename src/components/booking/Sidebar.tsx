@@ -2,12 +2,32 @@ import { motion } from "framer-motion";
 import { Star, MapPin, Plane, Calendar, Search, Phone, Clock, Check, Image } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { Link } from "react-router-dom";
 
 const featuredTrips = [
-  { title: "Paris Getaway", price: 899, rating: 4.9, gradient: "from-pink-400 to-rose-500" },
-  { title: "Tokyo Adventure", price: 1299, rating: 4.8, gradient: "from-red-400 to-orange-500" },
-  { title: "Dubai Luxury", price: 1599, rating: 4.9, gradient: "from-amber-400 to-yellow-500" },
+  {
+    title: "Paris Getaway",
+    slug: "paris-getaway",
+    price: 899,
+    rating: 4.9,
+    image: "/carousel/paris.png",
+  },
+  {
+    title: "Tokyo Adventure",
+    slug: "tokyo-adventure",
+    price: 1299,
+    rating: 4.8,
+    image: "/carousel/japan.png",
+  },
+  {
+    title: "Dubai Luxury",
+    slug: "dubai-luxury",
+    price: 1599,
+    rating: 4.9,
+    image: "/carousel/off-road.jpg",
+  },
 ];
+
 
 const tripDetails = [
   { icon: Clock, label: "Duration", value: "7 Days" },
@@ -162,29 +182,47 @@ const Sidebar = ({ packageData }) => {
         <div className="space-y-4">
           {featuredTrips.map((trip, idx) => (
             <motion.div
-              key={trip.title}
+              key={trip.slug}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: idx * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ x: 5 }}
-              className="flex items-center gap-3 cursor-pointer group"
             >
-              <div className={`w-16 h-12 rounded-lg bg-gradient-to-br ${trip.gradient} flex items-center justify-center`}>
-                <Image className="w-5 h-5 text-white/50" />
-              </div>
-              <div className="flex-1">
-                <h4 className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
-                  {trip.title}
-                </h4>
-                <div className="flex items-center gap-2">
-                  <Star className="w-3 h-3 text-amber-500 fill-amber-500" />
-                  <span className="text-xs text-muted-foreground">{trip.rating}</span>
+              <Link
+                to={`/packages/${trip.slug}`}
+                className="flex items-center gap-3 cursor-pointer group"
+              >
+                {/* Image */}
+                <div className="w-16 h-12 rounded-lg overflow-hidden bg-muted">
+                  <img
+                    src={trip.image}
+                    alt={trip.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-              </div>
-              <span className="text-sm font-bold text-foreground">${trip.price}</span>
+
+                {/* Info */}
+                <div className="flex-1">
+                  <h4 className="text-sm font-medium text-foreground group-hover:text-primary transition-colors">
+                    {trip.title}
+                  </h4>
+                  <div className="flex items-center gap-2">
+                    <Star className="w-3 h-3 text-amber-500 fill-amber-500" />
+                    <span className="text-xs text-muted-foreground">
+                      {trip.rating}
+                    </span>
+                  </div>
+                </div>
+
+                {/* Price */}
+                <span className="text-sm font-bold text-foreground">
+                  ${trip.price}
+                </span>
+              </Link>
             </motion.div>
           ))}
+
         </div>
       </motion.div>
 
