@@ -21,7 +21,7 @@ const featuredTrips = [
   },
   {
     title: "Dubai Luxury",
-    slug: "dubai-luxury",
+    slug: "dubai-desert-safari",
     price: 1599,
     rating: 4.9,
     image: "/carousel/off-road.jpg",

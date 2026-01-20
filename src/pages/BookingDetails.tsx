@@ -10,7 +10,6 @@ import ContactForm from "@/components/booking/ContactForm";
 import Footer from "@/components/Footer";
 
 import { packages } from "@/data/bookingdata";
-import path from "path";
 
 const BookingDetails = () => {
   const { slug } = useParams();

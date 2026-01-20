@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Search, Heart, Star, ChevronLeft, ChevronRight } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -16,6 +17,7 @@ const services = [
   {
     id: 1,
     name: "Luxury Beach Villa",
+    slug: "luxury-beach-villa",
     category: "accommodation",
     image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=500&fit=crop",
     rating: 4.93,
@@ -24,6 +26,7 @@ const services = [
   {
     id: 2,
     name: "Mountain Retreat",
+    slug: "mountain-retreat",
     category: "accommodation",
     image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=500&fit=crop",
     rating: 4.75,
@@ -32,6 +35,7 @@ const services = [
   {
     id: 3,
     name: "City Center Apartment",
+    slug: "city-center-apartment",
     category: "accommodation",
     image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=500&fit=crop",
     rating: 5.00,
@@ -40,6 +44,7 @@ const services = [
   {
     id: 4,
     name: "Seaside Bungalow",
+    slug: "seaside-bungalow",
     category: "accommodation",
     image: "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=400&h=500&fit=crop",
     rating: 4.97,
@@ -48,6 +53,7 @@ const services = [
   {
     id: 5,
     name: "Hilltop Estate",
+    slug: "hilltop-estate",
     category: "accommodation",
     image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=500&fit=crop",
     rating: 4.99,
@@ -56,6 +62,7 @@ const services = [
   {
     id: 6,
     name: "Urban Loft",
+    slug: "urban-loft",
     category: "accommodation",
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=500&fit=crop",
     rating: 4.90,
@@ -64,6 +71,7 @@ const services = [
   {
     id: 7,
     name: "Clifftop Villa",
+    slug: "clifftop-villa",
     category: "accommodation",
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=500&fit=crop",
     rating: 4.98,
@@ -72,6 +80,7 @@ const services = [
   {
     id: 8,
     name: "Beachfront House",
+    slug: "beachfront-house",
     category: "accommodation",
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=500&fit=crop",
     rating: 4.85,
@@ -80,6 +89,7 @@ const services = [
   {
     id: 9,
     name: "Luxury SUV Rental",
+    slug: "luxury-suv-rental",
     category: "car-hiring",
     image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=400&h=500&fit=crop",
     rating: 4.88,
@@ -88,6 +98,7 @@ const services = [
   {
     id: 10,
     name: "Convertible Sports Car",
+    slug: "convertible-sports-car",
     category: "car-hiring",
     image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=400&h=500&fit=crop",
     rating: 4.92,
@@ -96,6 +107,7 @@ const services = [
   {
     id: 11,
     name: "Economy Sedan",
+    slug: "economy-sedan",
     category: "car-hiring",
     image: "https://images.unsplash.com/photo-1550355291-bbee04a92027?w=400&h=500&fit=crop",
     rating: 4.70,
@@ -104,6 +116,7 @@ const services = [
   {
     id: 12,
     name: "Premium Minivan",
+    slug: "premium-minivan",
     category: "car-hiring",
     image: "https://images.unsplash.com/photo-1559416523-140ddc3d238c?w=400&h=500&fit=crop",
     rating: 4.85,
@@ -112,6 +125,7 @@ const services = [
   {
     id: 13,
     name: "First Class Flight",
+    slug: "first-class-flight",
     category: "flight-booking",
     image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=400&h=500&fit=crop",
     rating: 4.95,
@@ -120,6 +134,7 @@ const services = [
   {
     id: 14,
     name: "Business Class",
+    slug: "business-class",
     category: "flight-booking",
     image: "https://images.unsplash.com/photo-1540339832862-474599807836?w=400&h=500&fit=crop",
     rating: 4.89,
@@ -128,6 +143,7 @@ const services = [
   {
     id: 15,
     name: "Safari Adventure",
+    slug: "safari-adventure",
     category: "tours",
     image: "https://images.unsplash.com/photo-1516426122078-c23e76319801?w=400&h=500&fit=crop",
     rating: 4.96,
@@ -136,6 +152,7 @@ const services = [
   {
     id: 16,
     name: "City Walking Tour",
+    slug: "city-walking-tour",
     category: "tours",
     image: "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=400&h=500&fit=crop",
     rating: 4.78,
@@ -154,49 +171,51 @@ const ServiceCard = ({ service, index }: { service: typeof services[0]; index: n
       transition={{ delay: index * 0.05 }}
       className="group cursor-pointer"
     >
-      <div className="relative rounded-xl overflow-hidden mb-3">
-        <img
-          src={service.image}
-          alt={service.name}
-          className="w-full aspect-[4/5] object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        {/* Favorite Button */}
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            setLiked(!liked);
-          }}
-          className="absolute top-3 right-3 w-8 h-8 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center transition-transform hover:scale-110"
-        >
-          <Heart
-            className={`w-4 h-4 transition-colors ${
-              liked ? "fill-red-500 text-red-500" : "text-foreground"
-            }`}
+      <Link to={`/booking/${service.slug}`}>
+        <div className="relative rounded-xl overflow-hidden mb-3">
+          <img
+            src={service.image}
+            alt={service.name}
+            className="w-full aspect-[4/5] object-cover transition-transform duration-500 group-hover:scale-105"
           />
-        </button>
-        {/* Guest Favorite Badge */}
-        {service.favorite && (
-          <div className="absolute top-3 left-3 bg-background text-foreground px-3 py-1 rounded-full text-xs font-medium shadow-md">
-            Guest favorite
-          </div>
-        )}
-      </div>
-      <div className="space-y-1">
-        <h3 className="font-semibold text-foreground">{service.name}</h3>
-        <div className="flex items-center gap-1 text-sm text-muted-foreground">
-          <Star className="w-3 h-3 fill-foreground text-foreground" />
-          <span className="text-foreground font-medium">{service.rating.toFixed(2)}</span>
+          {/* Favorite Button */}
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              e.stopPropagation();
+              setLiked(!liked);
+            }}
+            className="absolute top-3 right-3 w-8 h-8 rounded-full bg-background/80 backdrop-blur-sm flex items-center justify-center transition-transform hover:scale-110"
+          >
+            <Heart
+              className={`w-4 h-4 transition-colors ${liked ? "fill-red-500 text-red-500" : "text-foreground"
+                }`}
+            />
+          </button>
+          {/* Guest Favorite Badge */}
+          {service.favorite && (
+            <div className="absolute top-3 left-3 bg-background text-foreground px-3 py-1 rounded-full text-xs font-medium shadow-md">
+              Guest favorite
+            </div>
+          )}
         </div>
-      </div>
+        <div className="space-y-1">
+          <h3 className="font-semibold text-foreground">{service.name}</h3>
+          <div className="flex items-center gap-1 text-sm text-muted-foreground">
+            <Star className="w-3 h-3 fill-foreground text-foreground" />
+            <span className="text-foreground font-medium">{service.rating.toFixed(2)}</span>
+          </div>
+        </div>
+      </Link>
     </motion.div>
   );
 };
 
-const ServiceCategory = ({ 
-  title, 
-  items 
-}: { 
-  title: string; 
+const ServiceCategory = ({
+  title,
+  items
+}: {
+  title: string;
   items: typeof services;
 }) => {
   const scrollContainerRef = useState<HTMLDivElement | null>(null);
@@ -252,7 +271,7 @@ const Services = () => {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       {/* Main Content */}
       <main className="pt-24 pb-20">
         <div className="container mx-auto px-8">
@@ -284,9 +303,9 @@ const Services = () => {
               <ServiceCategory title="Tours & Excursions" items={groupedServices.tours} />
             </>
           ) : (
-            <ServiceCategory 
-              title={categories.find(c => c.id === activeCategory)?.name || ""} 
-              items={filteredServices} 
+            <ServiceCategory
+              title={categories.find(c => c.id === activeCategory)?.name || ""}
+              items={filteredServices}
             />
           )}
         </div>
