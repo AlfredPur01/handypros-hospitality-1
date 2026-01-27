@@ -36,9 +36,8 @@ const Header = () => {
             <Link
               key={link.name}
               to={link.path}
-              className={`nav-link ${
-                location.pathname === link.path ? "text-primary" : ""
-              }`}
+              className={`nav-link ${location.pathname === link.path ? "text-primary" : ""
+                }`}
             >
               {link.name}
             </Link>
@@ -47,11 +46,11 @@ const Header = () => {
 
         {/* CTA Button */}
         <Link to="/services" className="btn-primary hidden md:block">
-          Explore Trip
+          Book A Stay
         </Link>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           className="md:hidden"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
@@ -78,15 +77,14 @@ const Header = () => {
                   key={link.name}
                   to={link.path}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`nav-link py-2 ${
-                    location.pathname === link.path ? "text-primary" : ""
-                  }`}
+                  className={`nav-link py-2 ${location.pathname === link.path ? "text-primary" : ""
+                    }`}
                 >
                   {link.name}
                 </Link>
               ))}
-              <Link 
-                to="/services" 
+              <Link
+                to="/services"
                 className="btn-primary text-center mt-2"
                 onClick={() => setMobileMenuOpen(false)}
               >

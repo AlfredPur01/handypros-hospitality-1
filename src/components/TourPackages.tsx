@@ -6,11 +6,11 @@ import { packages } from "@/data/bookingdata";
 
 
 const tabs = [
-  "Multi Holidays",
-  "Sport Holidays",
-  "Overwater Villa Holidays",
-  "Luxury Holidays",
-  "Skill Holidays",
+  "All Apartments",
+  "Short-Stay",
+  "Serviced Apartments",
+  "Luxury Apartments",
+  "Executive Stays",
 ];
 
 const TourPackages = () => {
@@ -26,8 +26,8 @@ const TourPackages = () => {
           viewport={{ once: true }}
           className="text-center text-black mb-8"
         >
-          <p className="text-3xl font-light font-justAnotherHand">Explore Recent Upcoming Travels</p>
-          <h2 className="text-2xl md:text-4xl font-black font-barlow">Featured Tour Packages</h2>
+          <p className="text-2xl font-light font-justAnotherHand">Explore our range of serviced and short-stay apartments designed for comfort, privacy, and convenience.</p>
+          <h2 className="text-2xl md:text-4xl font-black font-barlow">Available Apartments</h2>
         </motion.div>
 
         {/* Tabs */}

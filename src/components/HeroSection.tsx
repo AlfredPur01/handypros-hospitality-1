@@ -24,7 +24,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.3 }}
               >
-                <h1 className="text-[#30E7D5] text-sm md:text-3xl font-justAnotherHand">Vacation Agency</h1>
+                <h1 className="text-[#30E7D5] text-sm md:text-3xl font-justAnotherHand">Curated Stays by Handypros</h1>
               </motion.h1>
               <div className="search text-center mt-4">
                 <motion.h1
@@ -32,9 +32,9 @@ const HeroSection = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
                 >
-                  <h1 className="text-white text-3xl md:text-5xl mt-4 font-semibold font-Outfit">Find Next Place to Visit</h1>
+                  <h1 className="text-white text-3xl md:text-4xl mt-4 font-semibold font-Outfit">Accommodation That Feels Stable, Not Temporary</h1>
                 </motion.h1>
-                <p className='text-white mt-2 text-3xl md:text-4xl font-justAnotherHand'>Choose from thousands of organized aAdventures</p>
+                <p className='text-white mt-2 text-3xl md:text-4xl font-justAnotherHand'>We offer professionally managed accommodations built around comfort, privacy, and peace of mind.</p>
 
                 {/* Search Bar */}
                 <motion.div
@@ -45,7 +45,7 @@ const HeroSection = () => {
                   <div className="search-bar bg-white mt-6 flex justify-center items-center rounded-full md:w-full max-w-md px-2">
                     <div className=""></div>
                     <div className="flex justify-between items-center">
-                      <input type="text" placeholder='Search your destination...' className='rounded-l-full px-6 py-4 w-96 focus:outline-none' />
+                      <input type="text" placeholder='Find a stay that fits you' className='rounded-l-full px-6 py-4 w-96 focus:outline-none' />
                       <div className="search-icon flex justify-self-end">
                         <Search size={36} className='bg-[#30E7D5] rounded-full p-2 cursor-pointer' />
                       </div>
@@ -62,7 +62,7 @@ const HeroSection = () => {
               >
                 <div className="text-white mt-10 flex flex-wrap justify-center items-center gap-3">
                   <User size={26} className='inline-block mr-2' />
-                  <span className='font-bold'>50k+ Happy Travelers</span>
+                  <span className='font-bold'>Trusted by Hundreds of Guests</span>
                   <span className='ml-2'><CiFacebook size={26} /></span>
                   <span className='ml-2'><FaXTwitter size={22} /></span>
                   <span className='ml-2'><FaBehance size={26} /></span>
@@ -89,10 +89,10 @@ const HeroSection = () => {
 
             {/* Content */}
             <div className="md:hidden z-10 relative flex flex-col justify-between px-4 py-8 h-full">
-              <h1 className="text-[#30E7D5] text-5xl md:text-4xl font-justAnotherHand">Vacation Agency</h1>
+              <h1 className="text-[#30E7D5] text-5xl md:text-4xl font-justAnotherHand">Curated Stays by Handypros</h1>
               <div className="search text-center mt-4">
-                <h1 className="text-white text-3xl md:text-5xl mt-4 font-semibold font-Outfit">Find Next Place to Visit</h1>
-                <p className='text-white mt-2 text-3xl font-justAnotherHand'>Choose from thousands of organized aAdventures</p>
+                <h1 className="text-white text-3xl md:text-5xl mt-4 font-semibold font-Outfit">Accommodation That Feels Stable, Not Temporary</h1>
+                <p className='text-white mt-2 text-3xl font-justAnotherHand'>We offer professionally managed accommodations built around comfort, privacy, and peace of mind.</p>
 
                 {/* Search Bar */}
                 <div className="search-bar bg-white mt-6 flex justify-center items-center rounded-full w-full max-w-md px-2">
@@ -109,7 +109,7 @@ const HeroSection = () => {
               {/* Social Users */}
               <div className="text-white mt-10 flex flex-wrap justify-start items-center gap-3">
                 <User size={26} className='inline-block mr-2' />
-                <span className='font-bold text-lg'>50k+ Happy Travelers</span>
+                <span className='font-bold text-lg'>Trusted by Hundreds of Guests</span>
                 <span className='ml-2'><CiFacebook size={26} /></span>
                 <span className='ml-2'><FaXTwitter size={26} /></span>
                 <span className='ml-2'><FaBehance size={26} /></span>

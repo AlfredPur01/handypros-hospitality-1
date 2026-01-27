@@ -15,8 +15,8 @@ const PopularDestinations = () => {
             viewport={{ once: true }}
           >
             <div className="flex flex-col justify-center items-center align-text-bottom  pb-40">
-              <h1 className='text-3xl md:text-5xl font-black mt-9 font-Barlow '>Popular Destinations</h1>
-              <p className='mt-3 text-sm md:text-2xl font-justAnotherHand'>Vacation Agency</p>
+              <h1 className='text-3xl md:text-5xl font-black mt-9 font-Barlow '>Featured Accommodations</h1>
+              <p className='mt-3 text-sm md:text-2xl font-justAnotherHand'>Curated Stays by Handypros</p>
             </div>
           </motion.div>
         </div>
@@ -31,8 +31,8 @@ const PopularDestinations = () => {
             className="space-y-6"
           >
             <div className="text-center md:text-left">
-              <h3 className="font-black text-3xl md:text-4xl font-barlow text-[#040404]">Explore Morocco</h3>
-              <p className="mt-4 font-justAnotherHand text-2xl">Up Next: AFCON at Morocco <span className="text-[#1C77F3] font-semibold">December 22nd, 2025</span></p>
+              <h3 className="font-black text-3xl md:text-4xl font-barlow text-[#040404]">Modern Serviced Apartment</h3>
+              <p className="mt-4 font-justAnotherHand text-2xl">Fully Serviced <span className="text-[#1C77F3] font-semibold">• Secure Environment</span></p>
             </div>
             <img
               src={morocco}
@@ -49,7 +49,7 @@ const PopularDestinations = () => {
             className="flex flex-col items-center "
           >
             <p className="mb-10 max-w-xl">
-              Explore our handpicked destinations around the world. From tropical paradises to bustling citiies, your travel dreams crafted into unforgettable experiences, find your perfect getaway.
+              Enjoy a stylish, fully furnished apartment designed for both short and extended stays. From cozy interiors to reliable utilities, every detail is tailored for a stress-free living experience.
             </p>
 
             {/* Features */}
@@ -57,17 +57,17 @@ const PopularDestinations = () => {
               <div className="flex flex-col gap-8">
                 <div>
                   <Plane size={40} className='bg-black text-white p-2 rounded-md mb-3' />
-                  <h2 className='font-bold text-xl'>Trusted Travel Guide</h2>
+                  <h2 className='font-bold text-xl'>Fully furnished living space</h2>
                   <p className='text-sm'>From planning to exploration, we ensure every moment is seamless, safe and memorable.</p>
                 </div>
 
                 <div className="mt-4">
                   <Car size={40} className='bg-black text-white p-2 rounded-md mb-3' />
-                  <h2 className="font-bold text-xl">Personalized Trips</h2>
-                  <p className='text-sm'>We customize detail to match your peace and passion.</p>
+                  <h2 className="font-bold text-xl">24/7 power & water supply</h2>
+                  <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sunt tempore omnis, amet hic ab accusamus dignissimos aspernatur vero asperiores.</p>
                 </div>
 
-                <button className="mt-10 cursor-pointer flex justify-self-start"><a href="" className='bg-[#2BBBE6] px-8 py-4 rounded-sm text-black font-extrabold transition-all hover:bg-gray-800 font-barlow'>BOOK NOW</a></button>
+                <button className="mt-10 cursor-pointer flex justify-self-start"><a href="" className='bg-[#2BBBE6] px-8 py-4 rounded-sm text-black font-extrabold transition-all hover:bg-gray-800 font-barlow'>Book This Stay</a></button>
               </div>
               {/* Book Now Button */}
               <div className="flex justify-center items-center">

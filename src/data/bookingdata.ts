@@ -1,7 +1,7 @@
 export const packages = [
   {
     id: 1,
-    name: "Morocco - AFCON, Rabat",
+    name: "One-Bedroom Serviced Apartment",
     slug: "morocco-afcon-rabat",
     image: "/carousel/morocco.jpg",
     images: [
@@ -17,7 +17,7 @@ export const packages = [
   },
   {
     id: 2,
-    name: "Dubai Desert Safari",
+    name: "One-Bedroom Serviced Apartment",
     slug: "dubai-desert-safari",
     image: "/carousel/off-road.jpg",
     images: [
@@ -31,7 +31,7 @@ export const packages = [
   },
   {
     id: 3,
-    name: "London City Tour",
+    name: "Two Bedroom Apartment",
     slug: "london-city-tour",
     image: "/carousel/london.png",
     images: [
@@ -45,7 +45,7 @@ export const packages = [
   },
   {
     id: 4,
-    name: "Japan City Tour",
+    name: "Studio Apartment",
     slug: "japan-city-tour",
     image: "/carousel/japan.png",
     images: [
@@ -59,7 +59,7 @@ export const packages = [
   },
   {
     id: 5,
-    name: "Paris City Tour",
+    name: "Luxury Short-Stay Apartment",
     slug: "paris-city-tour",
     image: "/carousel/paris.png",
     images: [
@@ -73,7 +73,7 @@ export const packages = [
   },
   {
     id: 6,
-    name: "Chao City Tour",
+    name: "Luxury Short-Stay Apartment",
     slug: "chao-city-tour",
     image: "/carousel/chao.png",
     images: [
