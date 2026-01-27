@@ -10,38 +10,38 @@ export const packages = [
       "/packages/morocco2.png",
       "/packages/morocco3.png",
     ],
-    location: "Rabat, Morocco",
+    location: "Rabat",
     price: 1250,
     description:
-      "Experience AFCON live in Rabat with premium accommodation, flights, and guided tours.",
+      "A fully serviced one-bedroom apartment offering comfort, privacy, and modern amenities — ideal for short or extended stays.",
   },
   {
     id: 2,
-    name: "One-Bedroom Serviced Apartment",
+    name: "One-Bedroom Luxury Apartment",
     slug: "dubai-desert-safari",
     image: "/carousel/off-road.jpg",
     images: [
       "/packages/dubai1.jpg",
       "/packages/dubai2.jpg",
     ],
-    location: "Dubai, UAE",
+    location: "Dubai",
     price: 980,
     description:
-      "Enjoy an unforgettable desert safari with dune bashing, camel rides, and luxury camping.",
+      "Elegant one-bedroom apartment featuring contemporary interiors, high-speed internet, and 24/7 power supply.",
   },
   {
     id: 3,
-    name: "Two Bedroom Apartment",
+    name: "Two-Bedroom City Apartment",
     slug: "london-city-tour",
     image: "/carousel/london.png",
     images: [
       "/packages/london1.jpg",
       "/packages/london2.jpg",
     ],
-    location: "London, UK",
+    location: "London",
     price: 1450,
     description:
-      "Explore London's landmarks with premium hotels, transport, and guided experiences.",
+      "Spacious two-bedroom apartment perfect for families or business stays, with premium furnishings and secure access.",
   },
   {
     id: 4,
@@ -52,10 +52,10 @@ export const packages = [
       "/packages/japan1.jpg",
       "/packages/japan2.jpg",
     ],
-    location: "Japan, Tokyo",
+    location: "Tokyo",
     price: 1450,
     description:
-      "Explore Japan's landmarks with premium hotels, transport, and guided experiences.",
+      "Modern studio apartment designed for comfort and convenience, located close to essential city attractions.",
   },
   {
     id: 5,
@@ -66,10 +66,10 @@ export const packages = [
       "/packages/paris1.jpg",
       "/packages/paris2.jpg",
     ],
-    location: "Paris, France",
+    location: "Prime City Location",
     price: 1450,
     description:
-      "Explore Paris's landmarks with premium hotels, transport, and guided experiences.",
+      "Tastefully furnished short-stay apartment offering a serene atmosphere, reliable utilities, and premium finishes.",
   },
   {
     id: 6,
@@ -80,50 +80,53 @@ export const packages = [
       "/packages/chao1.jpg",
       "/packages/chao2.jpg",
     ],
-    location: "Paris, France",
+    location: "Prime City Location",
     price: 1450,
     description:
-      "Explore Chao's landmarks with premium hotels, transport, and guided experiences.",
+      "A modern, fully furnished apartment offering comfort, privacy, and reliable utilities — perfect for short or extended stays.",
   },
   // Services
   {
     id: 7,
-    name: "Luxury Beach Villa",
+    name: "Luxury Beachfront Villa",
     slug: "luxury-beach-villa",
     image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=400&h=500&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&h=600&fit=crop",
     ],
-    location: "Maldives",
+    location: "Coastal Location",
     price: 2500,
-    description: "Luxurious beach villa with stunning ocean views and private pool.",
+    description:
+      "Exclusive beachfront villa featuring expansive living spaces, private pool, and uninterrupted ocean views.",
   },
   {
     id: 8,
-    name: "Mountain Retreat",
+    name: "Mountain View Retreat",
     slug: "mountain-retreat",
     image: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=400&h=500&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=600&fit=crop",
     ],
-    location: "Swiss Alps",
+    location: "Serene Mountain Area",
     price: 1800,
-    description: "Peaceful mountain retreat with breathtaking alpine views.",
+    description:
+      "Peaceful residential retreat offering breathtaking views, quiet surroundings, and premium comfort.",
   },
   {
     id: 9,
-    name: "City Center Apartment",
+    name: "City-Center Apartment",
     slug: "city-center-apartment",
     image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=400&h=500&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&h=600&fit=crop",
     ],
-    location: "New York, USA",
+    location: "Central Business District",
     price: 950,
-    description: "Modern apartment in the heart of the city with all amenities.",
+    description:
+      "Stylish city apartment offering convenience, modern amenities, and easy access to key locations.",
   },
   {
     id: 10,
@@ -134,61 +137,66 @@ export const packages = [
       "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=800&h=600&fit=crop",
     ],
-    location: "Bali, Indonesia",
+    location: "Seaside Community",
     price: 1200,
-    description: "Charming seaside bungalow with direct beach access.",
+    description:
+      "Charming seaside bungalow designed for relaxation, comfort, and peaceful coastal living.",
   },
   {
     id: 11,
-    name: "Hilltop Estate",
+    name: "Hilltop Luxury Estate",
     slug: "hilltop-estate",
     image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=400&h=500&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&h=600&fit=crop",
     ],
-    location: "Tuscany, Italy",
+    location: "Exclusive Residential Area",
     price: 3200,
-    description: "Stunning hilltop estate with panoramic vineyard views.",
+    description:
+      "Premium hilltop residence offering privacy, panoramic views, and refined luxury living.",
   },
   {
     id: 12,
-    name: "Urban Loft",
+    name: "Urban Loft Apartment",
     slug: "urban-loft",
     image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=500&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&h=600&fit=crop",
     ],
-    location: "Berlin, Germany",
+    location: "Urban District",
     price: 780,
-    description: "Stylish urban loft with industrial design elements.",
+    description:
+      "Modern loft-style apartment featuring open layouts, contemporary finishes, and city views.",
   },
   {
     id: 13,
-    name: "Clifftop Villa",
+    name: "Clifftop Luxury Villa",
     slug: "clifftop-villa",
     image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&h=500&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&h=600&fit=crop",
     ],
-    location: "Santorini, Greece",
+    location: "Exclusive Cliffside Area",
     price: 2800,
-    description: "Spectacular clifftop villa with infinity pool overlooking the sea.",
+    description:
+      "High-end clifftop villa offering unmatched views, refined interiors, and private living.",
   },
   {
     id: 14,
-    name: "Beachfront House",
+    name: "Beachfront Residence",
     slug: "beachfront-house",
     image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=400&h=500&fit=crop",
     images: [
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
       "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=600&fit=crop",
     ],
-    location: "Miami, USA",
+    location: "Beachfront Community",
     price: 2100,
-    description: "Beautiful beachfront house with private beach access.",
+    description:
+      "Spacious beachfront home offering comfort, privacy, and direct access to serene surroundings.",
   },
   {
     id: 15,
