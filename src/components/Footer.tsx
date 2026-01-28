@@ -11,16 +11,17 @@ const Footer = () => {
           <div className="p-5 flex flex-col justify-center text-center md:text-left">
             <div className="logo flex items-center justify-center md:justify-start">
               <img src={logo} alt="logo" width={40} height={40} className='' />
-              <h3 className='text-base ml-2 text-white'>HandPros Hospitality</h3>
+              <h3 className='text-base ml-2 text-white'>HandyPros Hospitality</h3>
             </div>
             <h2 className="text-white font-black md:text-3xl text-2xl">
-              Bookmark in Your Own Way, With
-              HandyPros Our Travel Agency
+              Find Your Perfect Stay with HandyPros Hospitality
             </h2>
+
             <div className="flex flex-col md:flex-row justify-between items-center">
               <button className="px-4 py-4 mx-2 my-4 text-center bg-[#30E7D5] text-black rounded-md w-full md:w-1/4 font-bold hover:cursor-pointer mt-8">
-                EXPLORE TRIP
+                EXPLORE STAYS
               </button>
+
               <p className="text-white font-bold text-sm">Call +234 809 8493357 or Chat Now.</p>
             </div>
           </div>
@@ -29,54 +30,56 @@ const Footer = () => {
 
           {/* Packages */}
           <div className="space-y-6">
-            <p className="font-bold text-white text-xl">Packages</p>
+            <p className="font-bold text-white text-xl">Accommodations</p>
             <ul className="space-y-6">
               <li className="text-gray-400 font-semibold flex items-center gap-2">
-                <span><MdOutlineDoubleArrow className='text-[#30E7D5]' /></span>
-                <span>Morocco </span>
+                <MdOutlineDoubleArrow className='text-[#30E7D5]' />
+                <span>Luxury Apartments</span>
               </li>
               <li className="text-gray-400 font-semibold flex items-center gap-2">
-                <span><MdOutlineDoubleArrow className='text-[#30E7D5]' /></span>
-                <span>London Express</span>
+                <MdOutlineDoubleArrow className='text-[#30E7D5]' />
+                <span>Beachfront Homes</span>
               </li>
               <li className="text-gray-400 font-semibold flex items-center gap-2">
-                <span><MdOutlineDoubleArrow className='text-[#30E7D5]' /></span>
-                <span>Chao Praya</span>
+                <MdOutlineDoubleArrow className='text-[#30E7D5]' />
+                <span>Serviced Villas</span>
               </li>
               <li className="text-gray-400 font-semibold flex items-center gap-2">
-                <span><MdOutlineDoubleArrow className='text-[#30E7D5]' /></span>
-                <span>Japan and Barley</span>
+                <MdOutlineDoubleArrow className='text-[#30E7D5]' />
+                <span>Short-Stay Rentals</span>
               </li>
             </ul>
           </div>
 
           {/* Stats */}
           <div className="bg-gray-800 rounded-3xl py-5 pl-5 space-y-6">
-            <div className="">
+            <div>
               <h2 className="text-2xl text-white font-bold">3.2K+</h2>
-              <p className="text-sm text-gray-400 font-bold">Bookings</p>
+              <p className="text-sm text-gray-400 font-bold">Successful Bookings</p>
             </div>
-            <div className="">
-              <h2 className="text-2xl text-white font-bold">12K</h2>
-              <p className="text-sm text-gray-400 font-bold">Total Travels</p>
+
+            <div>
+              <h2 className="text-2xl text-white font-bold">120+</h2>
+              <p className="text-sm text-gray-400 font-bold">Premium Properties</p>
             </div>
-            <div className="">
-              <h2 className="text-2xl text-white font-bold">96708</h2>
-              <p className="text-sm text-gray-400 font-bold">Total Travelers</p>
+
+            <div>
+              <h2 className="text-2xl text-white font-bold">98%</h2>
+              <p className="text-sm text-gray-400 font-bold">Guest Satisfaction</p>
             </div>
           </div>
 
           {/* Support */}
           <div className="space-y-6">
-            <p className="font-bold text-white text-xl">Supports</p>
+            <p className="font-bold text-white text-xl">Support</p>
             <ul className="space-y-6">
               <li className="text-gray-400 font-semibold flex items-center gap-2">
                 <span><MdOutlineDoubleArrow className='text-[#30E7D5]' /></span>
-                <span>Emails</span>
+                <span>Email Support</span>
               </li>
               <li className="text-gray-400 font-semibold flex items-center gap-2">
                 <span><MdOutlineDoubleArrow className='text-[#30E7D5]' /></span>
-                <span>Social Media</span>
+                <span>Live Chat</span>
               </li>
               <li className="text-gray-400 font-semibold flex items-center gap-2">
                 <span><MdOutlineDoubleArrow className='text-[#30E7D5]' /></span>
@@ -84,7 +87,7 @@ const Footer = () => {
               </li>
               <li className="text-gray-400 font-semibold flex items-center gap-2">
                 <span><MdOutlineDoubleArrow className='text-[#30E7D5]' /></span>
-                <span>Calls</span>
+                <span>Phone Support</span>
               </li>
             </ul>
           </div>
@@ -113,10 +116,14 @@ const Footer = () => {
           </div>
           {/* testimonial Input */}
           <div className="space-y-8">
-            <p className="font-bold text-white text-xl">What would you say to everyone about us</p>
-            <p className="text-gray-400 font-semibold">add your own testimonial content here...</p>
+            <p className="font-bold text-white text-xl">
+              Share your stay experience
+            </p>
+            <p className="text-gray-400 font-semibold">
+              Tell others how HandyPros made your stay comfortable and memorable.
+            </p>
             <div className="flex w-full justify-between bg-gray-500 rounded-lg overflow-hidden mt-3">
-              <input type="text" placeholder='click to upload your picture' className=' outline-none focus:outline-none bg-transparent text-white w-3/4 pl-2.5' />
+              <input type="text" placeholder='Write your experience here...' className=' outline-none focus:outline-none bg-transparent text-white w-3/4 pl-2.5' />
               <button className="px-4 py-4 text-center bg-[#22bbbbd5] text-black rounded-r-lg w-1/4 font-bold hover:cursor-pointer">
                 Submit
               </button>
@@ -125,7 +132,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright */}
-        <p className="mt-20 mx-5 py-8 border-t-gray-600 border-t text-center text-white font-bold text-sm"> ©2025 HandyPros | All Rights Reserved</p>
+        <p className="mt-20 mx-5 py-8 border-t-gray-600 border-t text-center text-white font-bold text-sm">©2025 HandyPros Hospitality | All Rights Reserved</p>
       </footer>
     </div>
   );

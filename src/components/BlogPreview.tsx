@@ -5,33 +5,33 @@ import { ArrowRight, Calendar, User } from "lucide-react";
 const blogPosts = [
   {
     id: 1,
-    slug: "top-10-destinations-2025",
-    title: "Top 10 Must-Visit Destinations in 2025",
-    excerpt: "Discover the most breathtaking locations around the world that should be on every traveler's bucket list this year.",
+    slug: "top-10-luxury-stays-2025",
+    title: "Top 10 Luxury Stays to Experience in 2025",
+    excerpt: "Discover premium accommodations offering comfort, style, and exceptional hospitality for your next short stay or getaway.",
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop",
     author: "Sarah Mitchell",
     date: "January 5, 2025",
-    category: "Travel Guide",
+    category: "Hospitality Insights",
   },
   {
     id: 2,
-    slug: "budget-travel-tips",
-    title: "Budget Travel Tips: See the World Without Breaking the Bank",
-    excerpt: "Expert advice on how to plan affordable trips without compromising on experiences and memories.",
+    slug: "smart-booking-tips",
+    title: "Smart Booking Tips for Comfortable Stays",
+    excerpt: "Learn how to select the perfect serviced apartment or short-stay accommodation without compromising on comfort and convenience.",
     image: "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=600&h=400&fit=crop",
     author: "Michael Chen",
     date: "January 3, 2025",
-    category: "Tips & Tricks",
+    category: "Guest Tips",
   },
   {
     id: 3,
-    slug: "sustainable-travel-guide",
-    title: "The Complete Guide to Sustainable Travel",
-    excerpt: "Learn how to minimize your environmental footprint while exploring the world responsibly.",
+    slug: "sustainable-lodging-guide",
+    title: "The Complete Guide to Sustainable Lodging",
+    excerpt: "Explore eco-friendly accommodations and practices that ensure a responsible and luxurious stay experience.",
     image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=400&fit=crop",
     author: "Emma Johnson",
     date: "December 28, 2024",
-    category: "Eco Travel",
+    category: "Eco Hospitality",
   },
 ];
 
@@ -47,9 +47,9 @@ const BlogPreview = () => {
           className="text-center mb-12"
         >
           <span className="font-justAnotherHand text-primary text-lg">Our Stories</span>
-          <h2 className="section-title mt-2">Travel Blog & Insights</h2>
+          <h2 className="section-title mt-2">Hospitality Blog & Insights</h2>
           <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            Explore stories, tips, and inspiration from around the world. Discover destinations, travel guides, and experiences that help you plan your next unforgettable journey.
+            Explore stories, tips, and inspiration about premium stays, comfort-first lodging, and short-term accommodations that make every guest feel welcome.
           </p>
         </motion.div>
 

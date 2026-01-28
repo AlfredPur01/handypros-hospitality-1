@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CheckCircle, Car } from "lucide-react";
+import { CheckCircle, Car, House } from "lucide-react";
 import explore from "@/assets/explore.png";
 import bookNow from "@/assets/book-now.png";
 
@@ -14,9 +14,9 @@ const ExploreNearby = () => {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <h2 className="section-title">Explore Nearby</h2>
-          <p className="font-pacifico text-primary text-lg mt-2">
-            Check out beautiful places around the world
+          <h2 className="section-title text-4xl md:text-5xl">Comfortable Stays</h2>
+          <p className="font-justAnotherHand text-primary text-3xl md:text-4xl mt-2">
+            Spaces that feel like home — wherever you are
           </p>
         </motion.div>
 
@@ -29,8 +29,8 @@ const ExploreNearby = () => {
             viewport={{ once: true }}
           >
             <img
-              src={explore}
-              alt="Explore nearby destinations"
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200&h=800&fit=crop&q=80"
+              alt="Modern serviced apartment interior"
               className="w-full rounded-2xl"
             />
           </motion.div>
@@ -43,7 +43,10 @@ const ExploreNearby = () => {
             className="space-y-8"
           >
             <p className="text-muted-foreground leading-relaxed">
-              Explore our handpicked destinations around the world. From tropical paradises to bustling citiies, your travel dreams crafted into unforgettable experiences, find your perfect getaway.
+              At HandyPros Hospitality, we provide fully serviced apartments
+              designed for comfort, privacy, and convenience. Whether you're
+              staying for a few nights or an extended period, our spaces are
+              crafted to give you a calm, secure, and premium living experience.
             </p>
 
             {/* Feature 1 */}
@@ -52,9 +55,10 @@ const ExploreNearby = () => {
                 <CheckCircle className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h4 className="font-semibold text-lg">Trusted Travel Guide</h4>
+                <h4 className="font-semibold text-lg">Quality You Can Trust</h4>
                 <p className="text-muted-foreground text-sm mt-1">
-                  From planning to exploration, we ensure every moment is seamless, safe and memorable.
+                  Clean, well-maintained apartments with reliable utilities,
+                  secure environments, and professional support throughout your stay.
                 </p>
               </div>
             </div>
@@ -62,12 +66,13 @@ const ExploreNearby = () => {
             {/* Feature 2 */}
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
-                <Car className="w-6 h-6 text-primary" />
+                <House className="w-6 h-6 text-primary" />
               </div>
               <div>
-                <h4 className="font-semibold text-lg">Personalized Trips</h4>
+                <h4 className="font-semibold text-lg">Flexible Living Options</h4>
                 <p className="text-muted-foreground text-sm mt-1">
-                  We customize detail to match your peace and passion.
+                  From short stays to long-term accommodation, we offer flexible
+                  options that fit your lifestyle and schedule.
                 </p>
               </div>
             </div>
@@ -75,7 +80,7 @@ const ExploreNearby = () => {
             {/* Book Now Button */}
             <div className="pt-4">
               <button className="btn-primary flex items-center gap-3">
-                BOOK NOW
+                VIEW AVAILABLE STAYS
                 <img src={bookNow} alt="" className="w-5 h-5" />
               </button>
             </div>
@@ -89,7 +94,7 @@ const ExploreNearby = () => {
           >
             <img
               src={bookNow}
-              alt="Travel accessories"
+              alt="Booking a serviced apartment"
               className="w-full rounded-2xl"
             />
           </motion.div>

@@ -34,29 +34,27 @@ const features = [
     title: "VIP Beaches",
     icon: FaUmbrellaBeach,
     description:
-      "No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full detention.",
+      "Experience exclusive beachfront accommodations with premium amenities and serene ocean views.",
   },
   {
     title: "Mountain Walks",
     icon: FaMountain,
     description:
-      "No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full detention.",
+      "Relax in cozy lodges nestled in the mountains while enjoying breathtaking trails and scenery.",
   },
   {
     title: "Luxury Yachts",
     icon: FaShip,
     description:
-      "No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full detention.",
+      "Stay on high-end yachts offering comfort, privacy, and unparalleled maritime experiences.",
   },
   {
     title: "Recreational Camps",
     icon: FaCampground,
     description:
-      "No one shall be subjected to arbitrary arrest, detention or exile. Everyone is entitled in full detention.",
+      "Discover unique camping stays with modern comforts, perfect for family adventures and retreats.",
   },
 ];
-
-
 
 const BestHolidays = () => {
   return (
@@ -69,14 +67,15 @@ const BestHolidays = () => {
           viewport={{ once: true }}
           className="text-center md:mb-28 mb-16"
         >
-          <span className="font-justAnotherHand text-3xl">Vacation Agen c</span>
-          <h2 className="font-extrabold text-3xl md:text-4xl font-barlow">The Best Holidays</h2>
+          <span className="font-justAnotherHand text-3xl">Stay With Us</span>
+          <h2 className="font-extrabold text-3xl md:text-4xl font-barlow">Premium Stays & Experiences</h2>
+          <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
+            Explore our curated accommodations and destinations designed for comfort, luxury, and unforgettable memories.
+          </p>
         </motion.div>
-
 
         {/* Background */}
         <div className="w-full px-6 md:px-10 bg-center bg-cover rounded-b-[32px]" style={{ backgroundImage: `url("/popularDestinations.jpg")` }}>
-
 
           {/* Image row */}
           <div className="flex relative md:bottom-20 flex-wrap md:flex-nowrap justify-center gap-4 md:gap-5 items-center md:px-20">
@@ -116,7 +115,6 @@ const BestHolidays = () => {
               </div>
             ))}
           </div>
-
 
         </div>
       </div>

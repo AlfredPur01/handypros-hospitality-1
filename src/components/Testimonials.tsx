@@ -6,42 +6,42 @@ const testimonials = [
   {
     id: 1,
     name: "Jane Chloe Sam",
-    role: "Popular Traveler",
+    role: "Frequent Guest",
     rating: 4.8,
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face",
-    quote: "Booking my trip through this platform was the best decision ever! Every detail was perfectly planned, and the personalized itinerary made me feel like the trip was made just for me.",
+    quote: "Staying here was an absolute delight! The rooms were impeccable, the staff attentive, and every detail of my stay was thoughtfully arranged.",
   },
   {
     id: 2,
     name: "Michael Chen",
-    role: "Adventure Seeker",
+    role: "Adventure Traveler",
     rating: 5.0,
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
-    quote: "The most memorable vacation I've ever had. The team went above and beyond to ensure everything was perfect. Highly recommend their services!",
+    quote: "From booking to checkout, the experience was seamless. The unique accommodations and curated activities made my stay unforgettable.",
   },
   {
     id: 3,
     name: "Sarah Williams",
-    role: "Luxury Traveler",
+    role: "Luxury Guest",
     rating: 4.9,
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face",
-    quote: "Exceptional service from start to finish. The accommodations were stunning, and the local experiences were unforgettable. Will definitely book again!",
+    quote: "Every detail was perfect—from the plush bedding to the local experiences arranged for me. This is my go-to place for premium stays!",
   },
   {
     id: 4,
     name: "David Rodriguez",
-    role: "Family Traveler",
+    role: "Family Guest",
     rating: 4.7,
     image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face",
-    quote: "Traveled with my whole family and it was seamless. Kid-friendly activities, comfortable stays, and memories that will last a lifetime.",
+    quote: "Our family vacation was seamless. Kid-friendly rooms, fun activities, and comfortable accommodations made it a trip to remember.",
   },
   {
     id: 5,
     name: "Emily Parker",
-    role: "Solo Explorer",
+    role: "Solo Traveler",
     rating: 5.0,
     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&h=200&fit=crop&crop=face",
-    quote: "As a solo traveler, safety was my priority. This team ensured I felt secure while having the adventure of a lifetime. Absolutely amazing!",
+    quote: "I felt safe, comfortable, and well-cared-for throughout my solo stay. The personalized touches truly enhanced the experience.",
   },
 ];
 
@@ -77,8 +77,11 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="font-justAnotherHand text-primary text-2xl">What Say People</span>
-          <h2 className="section-title mt-2">The Best Holidays</h2>
+          <span className="font-justAnotherHand text-primary text-2xl">Guest Experiences</span>
+          <h2 className="section-title mt-2">What Our Guests Say</h2>
+          <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
+            Hear from our valued guests about their stays, comfort, and unforgettable experiences at our properties.
+          </p>
         </motion.div>
 
         {/* Testimonial Carousel */}
@@ -95,14 +98,13 @@ const Testimonials = () => {
                   zIndex: testimonial.position === 0 ? 10 : 5 - Math.abs(testimonial.position),
                 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
-                className={`relative cursor-pointer ${testimonial.position === 0 ? "" : ""}`}
+                className={`relative cursor-pointer`}
                 onClick={() => {
                   const targetIndex = testimonials.findIndex(t => t.id === testimonial.id);
                   setActiveIndex(targetIndex);
                 }}
               >
                 <div className={`relative ${testimonial.position === 0 ? "w-28 h-28 md:w-32 md:h-32" : "w-16 h-16 md:w-20 md:h-20"}`}>
-                  {/* Decorative lines for center avatar */}
                   {testimonial.position === 0 && (
                     <>
                       <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-3 h-3">

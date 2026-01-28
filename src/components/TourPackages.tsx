@@ -105,10 +105,10 @@ const TourPackages = () => {
             </div>
 
             <p className="max-w-md text-sm font-Barlow text-center">
-              Carefully curated travel packages with everything you need for an
-              unforgettable journey. All packages include flights,
-              accommodation, and exclusive experiences.
+              Thoughtfully selected accommodations designed for comfort, privacy, and
+              unforgettable stays. Every space is crafted to feel like home — only better.
             </p>
+
 
             <div className="logo flex items-center justify-center">
               <img src="/logo.png" alt="logo" width={40} height={40} />

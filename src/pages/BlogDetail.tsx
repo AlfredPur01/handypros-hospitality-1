@@ -9,7 +9,7 @@ const blogPosts = [
     id: 1,
     slug: "top-10-destinations-2025",
     title: "Top 10 Must-Visit Destinations in 2025",
-    excerpt: "Discover the most breathtaking locations around the world that should be on every traveler's bucket list this year.",
+    excerpt: "Embark on a journey to the world's most captivating destinations for 2025.",
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&h=600&fit=crop",
     author: "Sarah Mitchell",
     authorImage: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
@@ -17,51 +17,51 @@ const blogPosts = [
     category: "Travel Guide",
     readTime: "8 min read",
     content: `
-      <p class="lead">As we step into 2025, the world of travel continues to evolve, offering new experiences and rediscovered gems. Whether you're seeking adventure, relaxation, or cultural immersion, these destinations promise unforgettable memories.</p>
+      <p class="lead">Step into 2025 with a curated list of travel experiences that promise unforgettable memories, cultural immersion, and breathtaking sights.</p>
 
       <h2>1. Kyoto, Japan</h2>
-      <p>With its ancient temples, traditional tea houses, and stunning cherry blossoms, Kyoto remains a timeless destination. The city beautifully balances preservation of its rich heritage with modern amenities, making it perfect for travelers seeking authentic cultural experiences.</p>
+      <p>Discover timeless temples, serene gardens, and cherry blossoms that paint the city in soft pinks each spring.</p>
 
       <h2>2. Patagonia, Argentina & Chile</h2>
-      <p>For adventure seekers, Patagonia offers some of the world's most dramatic landscapes. From towering glaciers to pristine lakes and rugged mountains, this region at the southern tip of South America is a paradise for hikers and nature enthusiasts.</p>
+      <p>Experience dramatic landscapes of glaciers, lakes, and mountains perfect for adventurers and nature lovers alike.</p>
 
       <h2>3. Marrakech, Morocco</h2>
-      <p>The vibrant souks, stunning riads, and rich cultural heritage make Marrakech a feast for the senses. The city's medina, a UNESCO World Heritage site, offers an immersive journey through centuries of history and tradition.</p>
+      <p>Immerse yourself in vibrant souks, exquisite riads, and centuries of rich Moroccan culture.</p>
 
       <h2>4. Iceland</h2>
-      <p>Land of fire and ice, Iceland continues to captivate travelers with its otherworldly landscapes. From the Northern Lights to geothermal hot springs and dramatic waterfalls, every corner of this Nordic island offers something spectacular.</p>
+      <p>Witness the Northern Lights, geothermal wonders, and dramatic waterfalls in this Nordic paradise.</p>
 
       <h2>5. Amalfi Coast, Italy</h2>
-      <p>The dramatic coastline, colorful villages, and Mediterranean cuisine make the Amalfi Coast a perennial favorite. Whether you're exploring the charming town of Positano or enjoying fresh seafood with ocean views, this Italian gem delivers romance and beauty in equal measure.</p>
+      <p>Stroll through colorful seaside towns and savor Mediterranean cuisine with panoramic ocean views.</p>
 
       <blockquote>"Travel is the only thing you buy that makes you richer." — Anonymous</blockquote>
 
       <h2>6. New Zealand</h2>
-      <p>From the rolling hills of Hobbiton to the adventure capital of Queenstown, New Zealand offers experiences for every type of traveler. The country's commitment to sustainability and preservation of its natural beauty makes it an ideal destination for eco-conscious travelers.</p>
+      <p>From Hobbiton’s rolling hills to Queenstown’s adventure sports, experience landscapes that inspire and energize.</p>
 
       <h2>7. Santorini, Greece</h2>
-      <p>The iconic white-washed buildings and blue domes of Santorini have made it one of the most photographed places in the world. Beyond its visual appeal, the island offers excellent wine, incredible sunsets, and rich archaeological sites.</p>
+      <p>Iconic white-and-blue architecture, incredible sunsets, and rich history await on this picturesque island.</p>
 
       <h2>8. Costa Rica</h2>
-      <p>A leader in eco-tourism, Costa Rica offers incredible biodiversity, from cloud forests to tropical beaches. Adventure activities like zip-lining, surfing, and wildlife watching make it perfect for active travelers.</p>
+      <p>Eco-tourism and adventure collide with cloud forests, tropical beaches, and wildlife encounters.</p>
 
       <h2>9. Portugal</h2>
-      <p>From the historic streets of Lisbon to the wine regions of Douro Valley, Portugal continues to grow as a top destination. Its affordable prices, warm hospitality, and diverse landscapes make it excellent value for travelers.</p>
+      <p>Historic streets, wine regions, and welcoming locals make Portugal a must-visit European destination.</p>
 
       <h2>10. Tanzania</h2>
-      <p>Home to the Serengeti and Mount Kilimanjaro, Tanzania offers some of Africa's most iconic experiences. The Great Migration, pristine beaches of Zanzibar, and authentic cultural encounters create a diverse and unforgettable journey.</p>
+      <p>From Serengeti safaris to Zanzibar beaches, Tanzania offers diverse experiences for curious travelers.</p>
 
-      <h2>Planning Your Trip</h2>
-      <p>When planning your visit to any of these destinations, consider the best seasons to travel, local customs and etiquette, and sustainable travel practices. Early booking is recommended, especially for popular destinations during peak seasons.</p>
+      <h2>Travel Tips</h2>
+      <p>Plan ahead, respect local cultures, and embrace sustainable travel practices to make the most of your journey.</p>
 
-      <p>Remember, the best trips are those planned with curiosity and openness to new experiences. Happy travels!</p>
+      <p>Adventure awaits—travel with curiosity and make every trip extraordinary!</p>
     `,
   },
   {
     id: 2,
     slug: "budget-travel-tips",
-    title: "Budget Travel Tips: See the World Without Breaking the Bank",
-    excerpt: "Expert advice on how to plan affordable trips without compromising on experiences and memories.",
+    title: "Budget Travel Tips: Explore Without Limits",
+    excerpt: "Learn how to maximize experiences while keeping your travel expenses in check.",
     image: "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=1200&h=600&fit=crop",
     author: "Michael Chen",
     authorImage: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face",
@@ -69,39 +69,36 @@ const blogPosts = [
     category: "Tips & Tricks",
     readTime: "6 min read",
     content: `
-      <p class="lead">Traveling doesn't have to drain your savings. With smart planning and insider knowledge, you can explore the world while keeping your budget intact.</p>
+      <p class="lead">Traveling smart allows you to explore more destinations without stretching your budget.</p>
 
-      <h2>1. Be Flexible with Dates</h2>
-      <p>Flight prices can vary dramatically depending on when you travel. Use flexible date search tools to find the cheapest days to fly. Mid-week flights are often significantly cheaper than weekend departures.</p>
+      <h2>1. Flexible Travel Dates</h2>
+      <p>Adjust your travel schedule to snag the best flight deals. Mid-week trips often save you money.</p>
 
-      <h2>2. Consider Alternative Accommodations</h2>
-      <p>Hotels aren't your only option. Hostels, guesthouses, and vacation rentals can offer better value, especially for longer stays. Many also provide kitchen facilities, saving you money on meals.</p>
+      <h2>2. Alternative Stays</h2>
+      <p>Consider hostels, guesthouses, and rentals to save while enjoying authentic local experiences.</p>
 
       <h2>3. Eat Like a Local</h2>
-      <p>Skip tourist restaurants and eat where locals do. Street food markets, local eateries, and grocery stores offer authentic experiences at a fraction of the cost.</p>
+      <p>Discover culinary delights at street markets and local eateries for genuine flavor at lower cost.</p>
 
-      <h2>4. Use Public Transportation</h2>
-      <p>Taxis and ride-shares add up quickly. Research public transportation options before you arrive. Many cities offer tourist passes that provide unlimited travel for a set period.</p>
-
-      <h2>5. Book in Advance (But Not Too Far)</h2>
-      <p>The sweet spot for booking flights is typically 6-8 weeks before departure. For accommodations, booking 2-4 weeks ahead often yields good deals while maintaining flexibility.</p>
+      <h2>4. Public Transportation</h2>
+      <p>Use buses, trains, and city passes instead of taxis to keep transportation costs down.</p>
 
       <blockquote>"A budget is telling your money where to go instead of wondering where it went." — Dave Ramsey</blockquote>
 
-      <h2>6. Travel Slowly</h2>
-      <p>Rushing through multiple destinations increases costs. Staying longer in fewer places reduces transportation expenses and often qualifies you for weekly accommodation discounts.</p>
+      <h2>5. Advance Booking</h2>
+      <p>Book flights 6-8 weeks ahead and accommodations 2-4 weeks in advance to get the best deals.</p>
 
-      <h2>7. Free Activities Are Everywhere</h2>
-      <p>Many museums offer free admission days, walking tours operate on tips, and nature doesn't charge entrance fees. Research free activities before you go.</p>
+      <h2>6. Slow Travel</h2>
+      <p>Spend more time in fewer destinations to reduce transport costs and enjoy a richer experience.</p>
 
-      <p>Remember, budget travel isn't about deprivation—it's about smart choices that allow you to travel more often and more meaningfully.</p>
+      <p>Smart planning makes budget travel both possible and memorable.</p>
     `,
   },
   {
     id: 3,
     slug: "sustainable-travel-guide",
     title: "The Complete Guide to Sustainable Travel",
-    excerpt: "Learn how to minimize your environmental footprint while exploring the world responsibly.",
+    excerpt: "Minimize your footprint and travel responsibly around the world.",
     image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=1200&h=600&fit=crop",
     author: "Emma Johnson",
     authorImage: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
@@ -109,29 +106,26 @@ const blogPosts = [
     category: "Eco Travel",
     readTime: "7 min read",
     content: `
-      <p class="lead">As travelers, we have a responsibility to protect the places we love to visit. Sustainable travel isn't just a trend—it's a necessity for preserving our planet for future generations.</p>
+      <p class="lead">Sustainable travel ensures that future generations can enjoy the world as we do today.</p>
 
-      <h2>Understanding Your Impact</h2>
-      <p>Every trip we take has an environmental footprint. From carbon emissions during flights to water usage at hotels, being aware of our impact is the first step toward traveling more responsibly.</p>
+      <h2>Know Your Impact</h2>
+      <p>Be mindful of emissions, water usage, and waste to minimize your environmental footprint.</p>
 
-      <h2>Choosing Eco-Friendly Transportation</h2>
-      <p>When possible, opt for trains over planes for shorter distances. If flying is necessary, consider direct flights (takeoffs and landings generate the most emissions) and carbon offset programs.</p>
+      <h2>Eco-Friendly Transport</h2>
+      <p>Choose trains for shorter trips, direct flights when necessary, and offset your carbon footprint.</p>
 
-      <h2>Supporting Local Communities</h2>
-      <p>Choose locally-owned accommodations and restaurants. Buy from local artisans instead of chain stores. Your tourism dollars should benefit the communities you visit.</p>
+      <h2>Support Local Communities</h2>
+      <p>Opt for locally-owned accommodations, buy from artisans, and immerse yourself in community culture.</p>
 
-      <h2>Reducing Waste</h2>
-      <p>Bring a reusable water bottle, shopping bag, and utensils. Refuse single-use plastics whenever possible. Many destinations now have water refill stations to support plastic-free travel.</p>
-
-      <h2>Respecting Wildlife</h2>
-      <p>Never support attractions that exploit animals. Choose ethical wildlife experiences that prioritize animal welfare and conservation over entertainment.</p>
+      <h2>Reduce Waste</h2>
+      <p>Carry reusable items and avoid single-use plastics to leave minimal impact.</p>
 
       <blockquote>"Take nothing but pictures, leave nothing but footprints, kill nothing but time." — Aliyyah Eniath</blockquote>
 
-      <h2>Conserving Resources</h2>
-      <p>Treat resources as if you were at home—or better. Reuse towels, take shorter showers, and turn off lights and AC when leaving your room.</p>
+      <h2>Respect Wildlife</h2>
+      <p>Choose ethical experiences and avoid attractions that harm animals or their habitats.</p>
 
-      <p>Sustainable travel is a journey, not a destination. Every small choice adds up to make a significant difference.</p>
+      <p>Every small choice makes a big difference in sustainable travel. Travel consciously, explore responsibly!</p>
     `,
   },
 ];
@@ -193,7 +187,7 @@ const BlogDetail = () => {
                 className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
               >
                 <ArrowLeft className="w-4 h-4" />
-                Back to Blog
+                Back to Stories
               </Link>
             </motion.div>
 
@@ -259,7 +253,7 @@ const BlogDetail = () => {
               transition={{ delay: 0.3 }}
               className="border-t border-border pt-12"
             >
-              <h2 className="text-2xl font-bold mb-8">Related Articles</h2>
+              <h2 className="text-2xl font-bold mb-8">Related Stories</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 {relatedPosts
                   .filter((p) => p.slug !== slug)

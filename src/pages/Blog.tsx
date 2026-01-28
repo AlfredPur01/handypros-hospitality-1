@@ -7,108 +7,108 @@ import Footer from "@/components/Footer";
 
 const blogCategories = [
   { id: "all", name: "All Posts" },
-  { id: "travel-guide", name: "Travel Guide" },
-  { id: "tips", name: "Tips & Tricks" },
-  { id: "eco", name: "Eco Travel" },
-  { id: "adventure", name: "Adventure" },
-  { id: "luxury", name: "Luxury" },
+  { id: "hospitality-insights", name: "Hospitality Insights" },
+  { id: "guest-tips", name: "Guest Tips" },
+  { id: "eco", name: "Eco Hospitality" },
+  { id: "luxury", name: "Luxury Stays" },
+  { id: "comfort-first", name: "Comfort First" },
 ];
 
 const blogPosts = [
   {
     id: 1,
-    slug: "top-10-destinations-2025",
-    title: "Top 10 Must-Visit Destinations in 2025",
-    excerpt: "Discover the most breathtaking locations around the world that should be on every traveler's bucket list this year. From hidden gems to popular hotspots, we've curated the ultimate travel guide.",
+    slug: "top-10-luxury-stays-2025",
+    title: "Top 10 Luxury Stays to Experience in 2025",
+    excerpt: "Discover premium accommodations offering comfort, style, and exceptional hospitality for your next short stay or getaway.",
     image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop",
     author: "Sarah Mitchell",
     date: "January 5, 2025",
-    category: "Travel Guide",
-    categoryId: "travel-guide",
+    category: "Hospitality Insights",
+    categoryId: "hospitality-insights",
     featured: true,
   },
   {
     id: 2,
-    slug: "budget-travel-tips",
-    title: "Budget Travel Tips: See the World Without Breaking the Bank",
-    excerpt: "Expert advice on how to plan affordable trips without compromising on experiences and memories. Learn the secrets seasoned travelers use to save money.",
+    slug: "smart-booking-tips",
+    title: "Smart Booking Tips for Comfortable Stays",
+    excerpt: "Learn how to select the perfect serviced apartment or short-stay accommodation without compromising on comfort and convenience.",
     image: "https://images.unsplash.com/photo-1488085061387-422e29b40080?w=600&h=400&fit=crop",
     author: "Michael Chen",
     date: "January 3, 2025",
-    category: "Tips & Tricks",
-    categoryId: "tips",
+    category: "Guest Tips",
+    categoryId: "guest-tips",
     featured: false,
   },
   {
     id: 3,
-    slug: "sustainable-travel-guide",
-    title: "The Complete Guide to Sustainable Travel",
-    excerpt: "Learn how to minimize your environmental footprint while exploring the world responsibly. Make a positive impact on the places you visit.",
+    slug: "sustainable-lodging-guide",
+    title: "The Complete Guide to Sustainable Lodging",
+    excerpt: "Explore eco-friendly accommodations and practices that ensure a responsible and luxurious stay experience.",
     image: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&h=400&fit=crop",
     author: "Emma Johnson",
     date: "December 28, 2024",
-    category: "Eco Travel",
+    category: "Eco Hospitality",
     categoryId: "eco",
     featured: false,
   },
   {
     id: 4,
-    slug: "solo-travel-safety",
-    title: "Solo Travel Safety: Tips for Independent Explorers",
-    excerpt: "Everything you need to know about staying safe while traveling alone. From choosing destinations to emergency preparedness.",
+    slug: "solo-stay-safety",
+    title: "Solo Stay Safety: Tips for Independent Guests",
+    excerpt: "Everything you need to know about staying safe while enjoying a solo short-term stay or serviced apartment experience.",
     image: "https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600&h=400&fit=crop",
     author: "David Rodriguez",
     date: "December 22, 2024",
-    category: "Tips & Tricks",
-    categoryId: "tips",
+    category: "Guest Tips",
+    categoryId: "guest-tips",
     featured: false,
   },
   {
     id: 5,
     slug: "luxury-resorts-maldives",
     title: "The Ultimate Guide to Luxury Resorts in Maldives",
-    excerpt: "Explore the most exclusive overwater villas and private island resorts in the Maldives. Indulge in world-class amenities and breathtaking ocean views.",
+    excerpt: "Explore the most exclusive overwater villas and private island resorts. Indulge in world-class amenities and breathtaking ocean views for your next stay.",
     image: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&h=400&fit=crop",
     author: "Jessica Taylor",
     date: "December 18, 2024",
-    category: "Luxury",
+    category: "Luxury Stays",
     categoryId: "luxury",
     featured: false,
   },
   {
     id: 6,
-    slug: "hiking-trails-europe",
-    title: "Best Hiking Trails in Europe for Adventure Seekers",
-    excerpt: "From the Swiss Alps to the Scottish Highlands, discover the most scenic and challenging hiking trails across Europe.",
+    slug: "premium-lodging-europe",
+    title: "Best European Stays for Comfort & Style",
+    excerpt: "From boutique hotels to serviced apartments, discover top accommodations in Europe that blend luxury, convenience, and hospitality.",
     image: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&h=400&fit=crop",
     author: "Tom Anderson",
     date: "December 15, 2024",
-    category: "Adventure",
-    categoryId: "adventure",
+    category: "Comfort First",
+    categoryId: "comfort-first",
     featured: false,
   },
   {
     id: 7,
-    slug: "food-tours-asia",
-    title: "Culinary Adventures: Best Food Tours in Asia",
-    excerpt: "Embark on a gastronomic journey through Asia's most vibrant food scenes. From street food to fine dining experiences.",
+    slug: "culinary-stays-asia",
+    title: "Culinary & Hospitality Experiences in Asia",
+    excerpt: "Combine your love for comfort stays with unique culinary experiences across Asia's top hotels and serviced apartments.",
     image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=400&fit=crop",
     author: "Lisa Wong",
     date: "December 10, 2024",
-    category: "Travel Guide",
-    categoryId: "travel-guide",
+    category: "Hospitality Insights",
+    categoryId: "hospitality-insights",
     featured: false,
   },
   {
     id: 8,
-    slug: "packing-essentials",
-    title: "The Ultimate Packing Checklist for Any Trip",
-    excerpt: "Never forget an essential item again with our comprehensive packing guide. Organized by trip type and duration.",
+    slug: "packing-essentials-stays",
+    title: "Packing Essentials for Short Stays & Serviced Apartments",
+    excerpt: "Never forget an essential item again with our comprehensive packing guide, designed for comfort-focused stays and short-term accommodations.",
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&h=400&fit=crop",
     author: "Rachel Green",
     date: "December 5, 2024",
-    category: "Tips & Tricks",
-    categoryId: "tips",
+    category: "Guest Tips",
+    categoryId: "guest-tips",
     featured: false,
   },
 ];
@@ -141,9 +141,9 @@ const Blog = () => {
             className="text-center mb-12"
           >
             <span className="font-pacifico text-primary text-lg">Our Stories</span>
-            <h1 className="section-title mt-2">Travel Blog & Insights</h1>
+            <h1 className="section-title mt-2">Hospitality Blog & Insights</h1>
             <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-              Explore stories, tips, and inspiration from around the world. Discover destinations, travel guides, and experiences that help you plan your next unforgettable journey.
+              Explore stories, tips, and inspiration from the world of premium stays, serviced apartments, and comfort-first accommodations that make every guest feel welcome.
             </p>
           </motion.div>
 
@@ -173,8 +173,8 @@ const Blog = () => {
                   key={category.id}
                   onClick={() => setActiveCategory(category.id)}
                   className={`px-5 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === category.id
-                      ? "bg-foreground text-background"
-                      : "bg-muted text-foreground hover:bg-muted/80"
+                    ? "bg-foreground text-background"
+                    : "bg-muted text-foreground hover:bg-muted/80"
                     }`}
                 >
                   {category.name}

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { CheckCircle, Car, Plane } from "lucide-react";
+import { Lightbulb, Car, Plane, House } from "lucide-react";
 import morocco from "@/assets/morocco.jpg";
 import bookNow from "@/assets/book-now.png";
 
@@ -35,7 +35,7 @@ const PopularDestinations = () => {
               <p className="mt-4 font-justAnotherHand text-2xl">Fully Serviced <span className="text-[#1C77F3] font-semibold">• Secure Environment</span></p>
             </div>
             <img
-              src={morocco}
+              src="https://images.unsplash.com/photo-1554995207-c18c203602cb?w=400&h=500&fit=crop&q=80"
               alt="Morocco destination"
               className="mt-6 w-full h-[400px] md:w-2/3 rounded-lg object-cover md:object-fill md:h-100 h-50"
             />
@@ -56,13 +56,13 @@ const PopularDestinations = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               <div className="flex flex-col gap-8">
                 <div>
-                  <Plane size={40} className='bg-black text-white p-2 rounded-md mb-3' />
+                  <House size={40} className='bg-black text-white p-2 rounded-md mb-3' />
                   <h2 className='font-bold text-xl'>Fully furnished living space</h2>
                   <p className='text-sm'>From planning to exploration, we ensure every moment is seamless, safe and memorable.</p>
                 </div>
 
                 <div className="mt-4">
-                  <Car size={40} className='bg-black text-white p-2 rounded-md mb-3' />
+                  <Lightbulb size={40} className='bg-black text-white p-2 rounded-md mb-3' />
                   <h2 className="font-bold text-xl">24/7 power & water supply</h2>
                   <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sunt tempore omnis, amet hic ab accusamus dignissimos aspernatur vero asperiores.</p>
                 </div>
